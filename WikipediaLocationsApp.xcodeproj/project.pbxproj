@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		554A6C722ADE9B330048EA45 /* WikipediaLocationsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A6C712ADE9B330048EA45 /* WikipediaLocationsAppApp.swift */; };
+		554A6C742ADE9B330048EA45 /* LocationsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A6C732ADE9B330048EA45 /* LocationsList.swift */; };
+		554A6C762ADE9B350048EA45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554A6C752ADE9B350048EA45 /* Assets.xcassets */; };
+		554A6C792ADE9B350048EA45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554A6C782ADE9B350048EA45 /* Preview Assets.xcassets */; };
+		554A6C832ADE9B350048EA45 /* WikipediaLocationsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A6C822ADE9B350048EA45 /* WikipediaLocationsAppTests.swift */; };
+		554A6C8D2ADE9B350048EA45 /* WikipediaLocationsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A6C8C2ADE9B350048EA45 /* WikipediaLocationsAppUITests.swift */; };
+		554A6C8F2ADE9B350048EA45 /* WikipediaLocationsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A6C8E2ADE9B350048EA45 /* WikipediaLocationsAppUITestsLaunchTests.swift */; };
+		554A6C9D2ADE9B610048EA45 /* NetworkLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 554A6C9C2ADE9B610048EA45 /* NetworkLayer */; };
+		554A6C9F2ADE9B7E0048EA45 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A6C9E2ADE9B7E0048EA45 /* LocationViewModel.swift */; };
+		554A6CA12ADEACF30048EA45 /* LocationsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A6CA02ADEACF30048EA45 /* LocationsApi.swift */; };
+		554A6CA32ADEAD0A0048EA45 /* LocationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A6CA22ADEAD0A0048EA45 /* LocationsResponse.swift */; };
+		554A6CA52ADEAD100048EA45 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A6CA42ADEAD100048EA45 /* Locations.swift */; };
+		554A6CA82ADEAD580048EA45 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A6CA72ADEAD580048EA45 /* ApiError.swift */; };
+		554A6CAA2ADEAD710048EA45 /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A6CA92ADEAD710048EA45 /* DataDecoder.swift */; };
+		554A6CAC2ADEAD800048EA45 /* LocationsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A6CAB2ADEAD800048EA45 /* LocationsEndpoint.swift */; };
+		554A6CAE2ADEADF60048EA45 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A6CAD2ADEADF60048EA45 /* DependencyInjection.swift */; };
+		554A6CB02ADEAE3D0048EA45 /* DependencyDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A6CAF2ADEAE3D0048EA45 /* DependencyDeclaration.swift */; };
+		554A6CB92ADEBA450048EA45 /* ListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A6CB82ADEBA450048EA45 /* ListCellView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		554A6C7F2ADE9B350048EA45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 554A6C662ADE9B330048EA45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 554A6C6D2ADE9B330048EA45;
+			remoteInfo = WikipediaLocationsApp;
+		};
+		554A6C892ADE9B350048EA45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 554A6C662ADE9B330048EA45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 554A6C6D2ADE9B330048EA45;
+			remoteInfo = WikipediaLocationsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		554A6C6E2ADE9B330048EA45 /* WikipediaLocationsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikipediaLocationsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		554A6C712ADE9B330048EA45 /* WikipediaLocationsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaLocationsAppApp.swift; sourceTree = "<group>"; };
+		554A6C732ADE9B330048EA45 /* LocationsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsList.swift; sourceTree = "<group>"; };
+		554A6C752ADE9B350048EA45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		554A6C782ADE9B350048EA45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		554A6C7E2ADE9B350048EA45 /* WikipediaLocationsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikipediaLocationsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		554A6C822ADE9B350048EA45 /* WikipediaLocationsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaLocationsAppTests.swift; sourceTree = "<group>"; };
+		554A6C882ADE9B350048EA45 /* WikipediaLocationsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikipediaLocationsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		554A6C8C2ADE9B350048EA45 /* WikipediaLocationsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaLocationsAppUITests.swift; sourceTree = "<group>"; };
+		554A6C8E2ADE9B350048EA45 /* WikipediaLocationsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaLocationsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		554A6C9E2ADE9B7E0048EA45 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		554A6CA02ADEACF30048EA45 /* LocationsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsApi.swift; sourceTree = "<group>"; };
+		554A6CA22ADEAD0A0048EA45 /* LocationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsResponse.swift; sourceTree = "<group>"; };
+		554A6CA42ADEAD100048EA45 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		554A6CA72ADEAD580048EA45 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		554A6CA92ADEAD710048EA45 /* DataDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDecoder.swift; sourceTree = "<group>"; };
+		554A6CAB2ADEAD800048EA45 /* LocationsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsEndpoint.swift; sourceTree = "<group>"; };
+		554A6CAD2ADEADF60048EA45 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		554A6CAF2ADEAE3D0048EA45 /* DependencyDeclaration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyDeclaration.swift; sourceTree = "<group>"; };
+		554A6CB82ADEBA450048EA45 /* ListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		554A6C6B2ADE9B330048EA45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554A6C9D2ADE9B610048EA45 /* NetworkLayer in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554A6C7B2ADE9B350048EA45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554A6C852ADE9B350048EA45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		554A6C652ADE9B330048EA45 = {
+			isa = PBXGroup;
+			children = (
+				554A6C702ADE9B330048EA45 /* WikipediaLocationsApp */,
+				554A6C812ADE9B350048EA45 /* WikipediaLocationsAppTests */,
+				554A6C8B2ADE9B350048EA45 /* WikipediaLocationsAppUITests */,
+				554A6C6F2ADE9B330048EA45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		554A6C6F2ADE9B330048EA45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				554A6C6E2ADE9B330048EA45 /* WikipediaLocationsApp.app */,
+				554A6C7E2ADE9B350048EA45 /* WikipediaLocationsAppTests.xctest */,
+				554A6C882ADE9B350048EA45 /* WikipediaLocationsAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		554A6C702ADE9B330048EA45 /* WikipediaLocationsApp */ = {
+			isa = PBXGroup;
+			children = (
+				554A6C712ADE9B330048EA45 /* WikipediaLocationsAppApp.swift */,
+				554A6CB12ADEAEA20048EA45 /* Modules */,
+				554A6CB72ADEAF0A0048EA45 /* Dependencies */,
+				554A6CB32ADEAEBB0048EA45 /* LocationsApi */,
+				554A6C752ADE9B350048EA45 /* Assets.xcassets */,
+				554A6C772ADE9B350048EA45 /* Preview Content */,
+			);
+			path = WikipediaLocationsApp;
+			sourceTree = "<group>";
+		};
+		554A6C772ADE9B350048EA45 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				554A6C782ADE9B350048EA45 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		554A6C812ADE9B350048EA45 /* WikipediaLocationsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				554A6C822ADE9B350048EA45 /* WikipediaLocationsAppTests.swift */,
+			);
+			path = WikipediaLocationsAppTests;
+			sourceTree = "<group>";
+		};
+		554A6C8B2ADE9B350048EA45 /* WikipediaLocationsAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				554A6C8C2ADE9B350048EA45 /* WikipediaLocationsAppUITests.swift */,
+				554A6C8E2ADE9B350048EA45 /* WikipediaLocationsAppUITestsLaunchTests.swift */,
+			);
+			path = WikipediaLocationsAppUITests;
+			sourceTree = "<group>";
+		};
+		554A6CA62ADEAD1C0048EA45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				554A6CA22ADEAD0A0048EA45 /* LocationsResponse.swift */,
+				554A6CA42ADEAD100048EA45 /* Locations.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		554A6CB12ADEAEA20048EA45 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				554A6CB22ADEAEA90048EA45 /* LocationsList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		554A6CB22ADEAEA90048EA45 /* LocationsList */ = {
+			isa = PBXGroup;
+			children = (
+				554A6CB82ADEBA450048EA45 /* ListCellView.swift */,
+				554A6C9E2ADE9B7E0048EA45 /* LocationViewModel.swift */,
+				554A6C732ADE9B330048EA45 /* LocationsList.swift */,
+			);
+			path = LocationsList;
+			sourceTree = "<group>";
+		};
+		554A6CB32ADEAEBB0048EA45 /* LocationsApi */ = {
+			isa = PBXGroup;
+			children = (
+				554A6CB42ADEAECF0048EA45 /* Errors */,
+				554A6CA62ADEAD1C0048EA45 /* Models */,
+				554A6CB52ADEAEE00048EA45 /* Endpoints */,
+				554A6CA02ADEACF30048EA45 /* LocationsApi.swift */,
+				554A6CA92ADEAD710048EA45 /* DataDecoder.swift */,
+			);
+			path = LocationsApi;
+			sourceTree = "<group>";
+		};
+		554A6CB42ADEAECF0048EA45 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				554A6CA72ADEAD580048EA45 /* ApiError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		554A6CB52ADEAEE00048EA45 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				554A6CAB2ADEAD800048EA45 /* LocationsEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		554A6CB72ADEAF0A0048EA45 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				554A6CAF2ADEAE3D0048EA45 /* DependencyDeclaration.swift */,
+				554A6CAD2ADEADF60048EA45 /* DependencyInjection.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		554A6C6D2ADE9B330048EA45 /* WikipediaLocationsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 554A6C922ADE9B350048EA45 /* Build configuration list for PBXNativeTarget "WikipediaLocationsApp" */;
+			buildPhases = (
+				554A6C6A2ADE9B330048EA45 /* Sources */,
+				554A6C6B2ADE9B330048EA45 /* Frameworks */,
+				554A6C6C2ADE9B330048EA45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WikipediaLocationsApp;
+			packageProductDependencies = (
+				554A6C9C2ADE9B610048EA45 /* NetworkLayer */,
+			);
+			productName = WikipediaLocationsApp;
+			productReference = 554A6C6E2ADE9B330048EA45 /* WikipediaLocationsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		554A6C7D2ADE9B350048EA45 /* WikipediaLocationsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 554A6C952ADE9B350048EA45 /* Build configuration list for PBXNativeTarget "WikipediaLocationsAppTests" */;
+			buildPhases = (
+				554A6C7A2ADE9B350048EA45 /* Sources */,
+				554A6C7B2ADE9B350048EA45 /* Frameworks */,
+				554A6C7C2ADE9B350048EA45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				554A6C802ADE9B350048EA45 /* PBXTargetDependency */,
+			);
+			name = WikipediaLocationsAppTests;
+			productName = WikipediaLocationsAppTests;
+			productReference = 554A6C7E2ADE9B350048EA45 /* WikipediaLocationsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		554A6C872ADE9B350048EA45 /* WikipediaLocationsAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 554A6C982ADE9B350048EA45 /* Build configuration list for PBXNativeTarget "WikipediaLocationsAppUITests" */;
+			buildPhases = (
+				554A6C842ADE9B350048EA45 /* Sources */,
+				554A6C852ADE9B350048EA45 /* Frameworks */,
+				554A6C862ADE9B350048EA45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				554A6C8A2ADE9B350048EA45 /* PBXTargetDependency */,
+			);
+			name = WikipediaLocationsAppUITests;
+			productName = WikipediaLocationsAppUITests;
+			productReference = 554A6C882ADE9B350048EA45 /* WikipediaLocationsAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		554A6C662ADE9B330048EA45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					554A6C6D2ADE9B330048EA45 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					554A6C7D2ADE9B350048EA45 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 554A6C6D2ADE9B330048EA45;
+					};
+					554A6C872ADE9B350048EA45 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 554A6C6D2ADE9B330048EA45;
+					};
+				};
+			};
+			buildConfigurationList = 554A6C692ADE9B330048EA45 /* Build configuration list for PBXProject "WikipediaLocationsApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 554A6C652ADE9B330048EA45;
+			packageReferences = (
+				554A6C9B2ADE9B610048EA45 /* XCLocalSwiftPackageReference "NetworkLayer" */,
+			);
+			productRefGroup = 554A6C6F2ADE9B330048EA45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				554A6C6D2ADE9B330048EA45 /* WikipediaLocationsApp */,
+				554A6C7D2ADE9B350048EA45 /* WikipediaLocationsAppTests */,
+				554A6C872ADE9B350048EA45 /* WikipediaLocationsAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		554A6C6C2ADE9B330048EA45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554A6C792ADE9B350048EA45 /* Preview Assets.xcassets in Resources */,
+				554A6C762ADE9B350048EA45 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554A6C7C2ADE9B350048EA45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554A6C862ADE9B350048EA45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		554A6C6A2ADE9B330048EA45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554A6CA82ADEAD580048EA45 /* ApiError.swift in Sources */,
+				554A6CA52ADEAD100048EA45 /* Locations.swift in Sources */,
+				554A6CAE2ADEADF60048EA45 /* DependencyInjection.swift in Sources */,
+				554A6CA32ADEAD0A0048EA45 /* LocationsResponse.swift in Sources */,
+				554A6CB02ADEAE3D0048EA45 /* DependencyDeclaration.swift in Sources */,
+				554A6C742ADE9B330048EA45 /* LocationsList.swift in Sources */,
+				554A6CAA2ADEAD710048EA45 /* DataDecoder.swift in Sources */,
+				554A6C9F2ADE9B7E0048EA45 /* LocationViewModel.swift in Sources */,
+				554A6CB92ADEBA450048EA45 /* ListCellView.swift in Sources */,
+				554A6C722ADE9B330048EA45 /* WikipediaLocationsAppApp.swift in Sources */,
+				554A6CA12ADEACF30048EA45 /* LocationsApi.swift in Sources */,
+				554A6CAC2ADEAD800048EA45 /* LocationsEndpoint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554A6C7A2ADE9B350048EA45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554A6C832ADE9B350048EA45 /* WikipediaLocationsAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		554A6C842ADE9B350048EA45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554A6C8D2ADE9B350048EA45 /* WikipediaLocationsAppUITests.swift in Sources */,
+				554A6C8F2ADE9B350048EA45 /* WikipediaLocationsAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		554A6C802ADE9B350048EA45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 554A6C6D2ADE9B330048EA45 /* WikipediaLocationsApp */;
+			targetProxy = 554A6C7F2ADE9B350048EA45 /* PBXContainerItemProxy */;
+		};
+		554A6C8A2ADE9B350048EA45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 554A6C6D2ADE9B330048EA45 /* WikipediaLocationsApp */;
+			targetProxy = 554A6C892ADE9B350048EA45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		554A6C902ADE9B350048EA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		554A6C912ADE9B350048EA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		554A6C932ADE9B350048EA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WikipediaLocationsApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 3F7XJ75P2L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.igor.atamanciuc.WikipediaLocationsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		554A6C942ADE9B350048EA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WikipediaLocationsApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 3F7XJ75P2L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.igor.atamanciuc.WikipediaLocationsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		554A6C962ADE9B350048EA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3F7XJ75P2L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.igor.atamanciuc.WikipediaLocationsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikipediaLocationsApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WikipediaLocationsApp";
+			};
+			name = Debug;
+		};
+		554A6C972ADE9B350048EA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3F7XJ75P2L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.igor.atamanciuc.WikipediaLocationsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikipediaLocationsApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WikipediaLocationsApp";
+			};
+			name = Release;
+		};
+		554A6C992ADE9B350048EA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3F7XJ75P2L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.igor.atamanciuc.WikipediaLocationsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WikipediaLocationsApp;
+			};
+			name = Debug;
+		};
+		554A6C9A2ADE9B350048EA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3F7XJ75P2L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.igor.atamanciuc.WikipediaLocationsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WikipediaLocationsApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		554A6C692ADE9B330048EA45 /* Build configuration list for PBXProject "WikipediaLocationsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554A6C902ADE9B350048EA45 /* Debug */,
+				554A6C912ADE9B350048EA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		554A6C922ADE9B350048EA45 /* Build configuration list for PBXNativeTarget "WikipediaLocationsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554A6C932ADE9B350048EA45 /* Debug */,
+				554A6C942ADE9B350048EA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		554A6C952ADE9B350048EA45 /* Build configuration list for PBXNativeTarget "WikipediaLocationsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554A6C962ADE9B350048EA45 /* Debug */,
+				554A6C972ADE9B350048EA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		554A6C982ADE9B350048EA45 /* Build configuration list for PBXNativeTarget "WikipediaLocationsAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554A6C992ADE9B350048EA45 /* Debug */,
+				554A6C9A2ADE9B350048EA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		554A6C9B2ADE9B610048EA45 /* XCLocalSwiftPackageReference "NetworkLayer" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = NetworkLayer;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		554A6C9C2ADE9B610048EA45 /* NetworkLayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkLayer;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 554A6C662ADE9B330048EA45 /* Project object */;
+}
