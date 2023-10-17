@@ -17,11 +17,12 @@ enum LocationsViewState {
 
 @MainActor class LocationsViewModel: ObservableObject {
     @Published var viewState: LocationsViewState = .loading
-    @Published var locations: [Locations] = []
+    @Published var locations: [Location] = []
 
     @Injected(\.locationsApi) var locationApi
+    @Injected(\.urlRouter) var urlRouter
     func getLocations() {
-        Task { 
+        Task {
             let response = await locationApi.getLocations()
             switch response {
             case let .success(locations):
@@ -31,6 +32,9 @@ enum LocationsViewState {
                 viewState = .error(error.description)
             }
         }
-            
+    }
+    
+    func onLocationTapped(with location: Location) {
+        urlRouter.openDestination(.wikipedia(location))
     }
 }

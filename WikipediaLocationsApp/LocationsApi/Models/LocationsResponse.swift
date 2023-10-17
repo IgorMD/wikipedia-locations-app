@@ -9,5 +9,5 @@ import Foundation
 
 
 struct LocationsResponse: Decodable {
-    var locations: [Locations]
+    var locations: [Location]
 }

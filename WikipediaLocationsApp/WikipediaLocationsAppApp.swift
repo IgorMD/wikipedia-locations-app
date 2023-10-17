@@ -12,7 +12,7 @@ struct WikipediaLocationsAppApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView(viewModel: LocationsViewModel())
+                LocationsListView(viewModel: LocationsViewModel())
             }
         }
     }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LocationsListView: View {
     @StateObject var viewModel: LocationsViewModel
     var body: some View {
         constructView().navigationTitle("Locations")
@@ -30,14 +30,13 @@ struct ContentView: View {
         case .display:
             List(viewModel.locations) { location in
                 ListCellView(location: location)
-                   
                     .frame(maxWidth: .infinity)
                     .padding()
                     .background(.white)
                     .cornerRadius(15)
                     .shadow(radius: 3)
                     .onTapGesture(perform: {
-                        UIApplication.shared.open(URL(string: "wikipedia://places?lat=\(location.lattitude)&lon=\(location.longiture)")!)
+                        viewModel.onLocationTapped(with: location)
                     })
             }.listStyle(.plain)
         }
@@ -46,6 +45,6 @@ struct ContentView: View {
 
 #Preview {
     NavigationView {
-        ContentView(viewModel: LocationsViewModel())
+        LocationsListView(viewModel: LocationsViewModel())
     }
 }

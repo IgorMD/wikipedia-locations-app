@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Locations: Decodable, Identifiable {
+struct Location: Decodable, Identifiable {
     var name: String?
     var lattitude: Double
     var longiture: Double

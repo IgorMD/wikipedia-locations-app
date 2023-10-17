@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ListCellView: View {
-    var location: Locations
+    var location: Location
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
@@ -20,7 +20,6 @@ struct ListCellView: View {
         }.listRowSeparator(.hidden)
     }
 }
-
 
 #Preview {
     ListCellView(location: .init(name: "Amsterdam",
