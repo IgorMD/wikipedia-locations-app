@@ -10,7 +10,7 @@ import SwiftUI
 struct LocationsListView: View {
     @StateObject var viewModel: LocationsViewModel
     var body: some View {
-        constructView().navigationTitle("Locations")
+        constructView().navigationTitle(Strings.navigationTitle)
     }
     
     @ViewBuilder private func constructView() -> some View {
@@ -18,7 +18,7 @@ struct LocationsListView: View {
         case .loading:
             HStack {
                 ProgressView {
-                    Text("Loading locations...")
+                    Text(Strings.loadingTitle)
                 }.onAppear(perform: {
                     viewModel.getLocations()
                 })
@@ -28,12 +28,9 @@ struct LocationsListView: View {
                 Text(string)
             }
         case .display:
-            List(viewModel.locations) { location in
-                ListCellView(location: location)
-                    .onTapGesture(perform: {
-                        viewModel.onLocationTapped(with: location)
-                    })
-            }.listStyle(.plain)
+            ListView(locations: $viewModel.locations) { location in
+                viewModel.onLocationTapped(with: location)
+            }
         }
     }
 }

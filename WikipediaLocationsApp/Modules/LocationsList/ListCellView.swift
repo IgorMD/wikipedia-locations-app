@@ -12,7 +12,7 @@ struct ListCellView: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text(location.name ?? "Get lucky").font(.headline)
+                Text(location.name ?? Strings.getLucky).font(.headline)
                 Text(location.latitudeDescription).font(.subheadline)
                 Text(location.longitudeDescription).font(.subheadline)
             }

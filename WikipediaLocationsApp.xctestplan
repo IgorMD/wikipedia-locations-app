@@ -22,15 +22,6 @@
         "identifier" : "554A6C7D2ADE9B350048EA45",
         "name" : "WikipediaLocationsAppTests"
       }
-    },
-    {
-      "enabled" : false,
-      "parallelizable" : true,
-      "target" : {
-        "containerPath" : "container:WikipediaLocationsApp.xcodeproj",
-        "identifier" : "554A6C872ADE9B350048EA45",
-        "name" : "WikipediaLocationsAppUITests"
-      }
     }
   ],
   "version" : 1

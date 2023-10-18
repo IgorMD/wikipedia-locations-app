@@ -22,14 +22,15 @@ enum LocationsViewState: Equatable {
     @Injected(\.locationsApi) var locationApi
     @Injected(\.urlRouter) var urlRouter
     func getLocations() {
-        Task {
-            let response = await locationApi.getLocations()
+        Task { [weak self] in
+            guard let self = self else { return }
+            let response = await self.locationApi.getLocations()
             switch response {
             case let .success(locations):
                 self.locations = locations.locations
-                viewState = .display
+                self.viewState = .display
             case let .failure(error):
-                viewState = .error(error.description)
+                self.viewState = .error(error.description)
             }
         }
     }
