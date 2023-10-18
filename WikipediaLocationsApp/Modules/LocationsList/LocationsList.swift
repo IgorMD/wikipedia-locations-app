@@ -30,11 +30,6 @@ struct LocationsListView: View {
         case .display:
             List(viewModel.locations) { location in
                 ListCellView(location: location)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(.white)
-                    .cornerRadius(15)
-                    .shadow(radius: 3)
                     .onTapGesture(perform: {
                         viewModel.onLocationTapped(with: location)
                     })

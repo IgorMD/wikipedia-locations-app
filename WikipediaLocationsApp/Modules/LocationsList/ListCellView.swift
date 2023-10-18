@@ -18,6 +18,11 @@ struct ListCellView: View {
             }
             Spacer()
         }.listRowSeparator(.hidden)
+            .frame(maxWidth: .infinity)
+            .padding()
+            .background(.white)
+            .cornerRadius(15)
+            .shadow(radius: 3)
     }
 }
 
