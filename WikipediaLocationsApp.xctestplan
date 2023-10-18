@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "12AB7761-B287-455A-A34E-730BB1796FDE",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:WikipediaLocationsApp.xcodeproj",
+      "identifier" : "554A6C6D2ADE9B330048EA45",
+      "name" : "WikipediaLocationsApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:WikipediaLocationsApp.xcodeproj",
+        "identifier" : "554A6C7D2ADE9B350048EA45",
+        "name" : "WikipediaLocationsAppTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:WikipediaLocationsApp.xcodeproj",
+        "identifier" : "554A6C872ADE9B350048EA45",
+        "name" : "WikipediaLocationsAppUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

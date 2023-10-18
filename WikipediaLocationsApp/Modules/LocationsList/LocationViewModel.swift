@@ -9,7 +9,7 @@ import Foundation
 import NetworkLayer
 import SwiftUI
 
-enum LocationsViewState {
+enum LocationsViewState: Equatable {
     case loading
     case error(String)
     case display

@@ -13,8 +13,8 @@ struct ListCellView: View {
         HStack {
             VStack(alignment: .leading) {
                 Text(location.name ?? "Get lucky").font(.headline)
-                Text("Lat: \(location.lattitude)").font(.subheadline)
-                Text("Long: \(location.longiture)").font(.subheadline)
+                Text(location.latitudeDescription).font(.subheadline)
+                Text(location.longitudeDescription).font(.subheadline)
             }
             Spacer()
         }.listRowSeparator(.hidden)
