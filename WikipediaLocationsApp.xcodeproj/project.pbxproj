@@ -165,6 +165,7 @@
 		554A6CB12ADEAEA20048EA45 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				554A6CBC2ADECC5B0048EA45 /* Routing */,
 				554A6CB22ADEAEA90048EA45 /* LocationsList */,
 			);
 			path = Modules;
@@ -175,7 +176,6 @@
 			children = (
 				554A6CB82ADEBA450048EA45 /* ListCellView.swift */,
 				554A6C9E2ADE9B7E0048EA45 /* LocationViewModel.swift */,
-				554A6CBA2ADECB380048EA45 /* DestinationRouter.swift */,
 				554A6C732ADE9B330048EA45 /* LocationsList.swift */,
 			);
 			path = LocationsList;
@@ -216,6 +216,14 @@
 				554A6CAD2ADEADF60048EA45 /* DependencyInjection.swift */,
 			);
 			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		554A6CBC2ADECC5B0048EA45 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				554A6CBA2ADECB380048EA45 /* DestinationRouter.swift */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

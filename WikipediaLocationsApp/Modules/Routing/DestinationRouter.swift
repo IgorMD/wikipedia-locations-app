@@ -31,7 +31,7 @@ struct URLRouter: URLRouterType {
     }
     
     func openDestination(_ destination: DestinationEndpoints) {
-        guard let url = destination.url, application.canOpenURL(url) else {
+        guard let url = destination.url else {
             return
         }
         application.open(url)
